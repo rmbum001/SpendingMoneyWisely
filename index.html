@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content= "width=device-width,initial-scale=1.0">
+    <link rel ="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class= "container">
+        <h1 class ="title">Spending App</h1>
+        <div class="section1">
+            <div class= "Spending-form">
+                <form action="#" id ="Spendingform1">
+                     <label for="">Can you enter your budget</label>
+                     <p class ="error">Not null entry</p>
+                     <input type ="text" id ="budget">
+                     <button id="add-btn">Add Budget</button>
+                 </form>
+
+            </div>
+            <div class = "reminder">
+             <div class ="reminder-category">
+                <h2 reminder-category_title>Budget</h2>
+                 <img class="reminder_image" src="./images/dol1.jpg" alt="">
+                 <p class="reminder_amount rouge">
+                    $<span class ="reminder_budget_show">0</span>
+                 </p>
+             </div>
+             <div class = "reminder">
+                <div class ="reminder-category">
+                   <h2 reminder-category_title>Spending</h2>
+                    <img class="reminder_image" src="./images/doros.svg" alt="">
+                    <p class="reminder_amount sp">
+                        $<span class ="reminder_Spending_show">0</span>
+                    </p>
+                </div>
+                <div class = "reminder">
+                    <div class ="reminder-category">
+                       <h2 class="reminder-category_title">Balance</h2>
+                        <img class="reminder_image" src="./images/2balances.jpg" alt="">
+                        <p class="reminder_amount Bal">
+                           $ <span class ="reminder_budget_show">0</span>
+                        </p>
+                    </div>
+            </div>
+        </div>
+        <div class="section2" >
+            <div class ="payment">
+                <form action="#"id="form2">
+                    <label for ="">Enter your payment label</label>
+                    <p class="NoEmpty">Cannot be empty and contains numbers</p>
+                    <input type ="text" id ="payment_name">
+                    <label for="">Please Enter the amount of your payment </label>
+                    <p class="NoEmpty">Can be only numbers</p>
+                    <input type ="text" id="payment-amount">
+                    <button id="payment_now">Make payment </button>
+                   
+                </form>
+            </div>
+            <div class="payment-feedback">
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="payment-title"> Name of my Payment
+                  </th>
+                  <th class="payment-amount">Payment Amount</th>
+                  <th class ="delete-edit"></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+             </table>
+             <template id="payment-row">
+                 <tr>
+                     <td class="payment-title"></td>
+                     <td class="payment-amount"></td>
+                     <td class ="delete-edit">
+                         <img class="delete_row" src="./images/del.svg"alt="">
+                         <img  class="editRow"src="./images/edit1.svg"alt="">
+
+                     </td>
+                 </tr>
+
+             </template >
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
